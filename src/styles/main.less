@@ -1,14 +1,8 @@
 @import "mapas";
+@import "reset.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(max-width: 1023px)";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: #fonts[primaryFont];
-}
 
 body {
     background-color: #colors[backgroundColor];
@@ -46,7 +40,7 @@ header {
         margin-left: 24px;
 
         a {
-            color: #fff;
+            color: #colors[textColor];
             text-decoration: none;
         }
     }
@@ -73,8 +67,8 @@ section {
 
     &-button{
         display: block;
-        background-color: #44bd32;
-        color: #fff;
+        background-color: #colors[buttonColor];
+        color: #colors[textColor];
         text-align: center;
         padding: 8px 0;
         border-radius: 8px;
@@ -82,7 +76,7 @@ section {
         text-decoration: none;
 
         &:hover{
-            background-color: #4cd137;
+            background-color: #colors[hoverColor];
         }
     }
 }
