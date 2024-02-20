@@ -30,11 +30,12 @@ aluno4.analiseDeSituacao();
 alunos.push(aluno1,aluno2,aluno3,aluno4);
 
 function alunosComNotaMaiorQueSeis(){
-    for(let i = 0; i < alunos.length; i++){
-        if(alunos[i].situacao == 'Aprovado'){
-            console.log(`${alunos[i].nome} - Aprovado`)
+    alunos.filter((aluno) => {
+        if(aluno.situacao == "Aprovado"){
+            console.log(`${aluno.nome} - Aprovado`)
         }
-    }
+    })
+    
 }
 
 alunosComNotaMaiorQueSeis();
